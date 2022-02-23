@@ -1,2 +1,2 @@
-# tec1-Audio-Synthesizer
+# tec-Audio-Synthesizer
 Audio-Synthesizer
