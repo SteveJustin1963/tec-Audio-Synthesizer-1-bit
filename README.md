@@ -7,4 +7,5 @@ Audio-Synthesizer
 - https://create.arduino.cc/projecthub/projects/tags/synthesizer
 - https://github.com/luisllamasbinaburo/Arduino-SyncWaveforms
 - https://sol.gfxile.net/z80/ch12.html
+- https://github.com/jarikomppa/speccy/
 - 
