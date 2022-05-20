@@ -11,4 +11,5 @@ Audio-Synthesizer
 - https://www.electronics-tutorial.net/finite-state-machines/Algorithmic-State-Machines/ASM-chart-for-signal-generator/
 - https://scienceprog.com/avr-dds-signal-generator-in-line-asm-explained/
 - https://www.chibiakumas.com/z80/platform3.php?noui=1
+- https://www.gamejournal.it/the-sound-of-1-bit-technical-constraint-as-a-driver-for-musical-creativity-on-the-48k-sinclair-zx-spectrum/
 - 
