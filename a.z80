@@ -1,0 +1,68 @@
+;z80 code
+
+org $300
+ld a, $FF
+ld ($350), a
+ld a, $80
+ld ($352), a
+
+play:
+ld a, ($C030)
+ld b, ($352)
+
+pulse:
+dec b
+ld ($352), b
+jr nz, pulse
+
+ld a, ($C030)
+ld c, ($350)
+
+countdn:
+dec c
+ld ($350), c
+jr nz, countdn
+
+call readkb
+jp play
+
+;subroutine
+
+readkb:
+ld a, ($C000)
+ld ($C010), a
+cp $88
+jp z, incr
+cp $95
+jp z, decr
+cp $C1
+jp z, pulseinc
+cp $DA
+jp z, pulsedec
+ret
+
+;subroutine
+
+incr:
+inc ($350)
+ret
+
+;subroutine
+
+decr:
+dec ($350)
+ret
+
+;subroutine
+
+pulseinc:
+dec ($352)
+inc ($350)
+ret
+
+;subroutine
+
+pulsedec:
+inc ($352)
+dec ($350)
+ret
