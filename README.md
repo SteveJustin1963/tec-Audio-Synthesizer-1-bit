@@ -11,6 +11,8 @@ Q: Dont touch that, thats my lunch!
 
 
 ### 1-bit music generators 
+
+
 The main difference between a PC and our speaker is that a PC can use a programmable interval timer to drive the speaker, while our speaker is driven directly by the CPU via one transistor. This means that our CPU is more busy than a PC's CPU in order to produce sound. In order to get accurate sound, you have to sacrifice time from your main program to fit in your exact speaker clicks. Stage 1 uses a 50-percent duty cycle, which produces simple sounds with very narrow rectangular waves. As the duty cycle approaches 0% (or 100%), the harmonic components are more evenly distributed, without the fundamental one strongly dominating. This means that a long tail of harmonic components are lost beyond human hearing ability, and beyond hardware frequency response, so relatively less of the specific sound can be heard. The simple assembly program a.z80 allows the user to modulate the frequency of a continuous sound by pressing the left and right arrow keys, and to modulate the duty cycle by pressing the A and Z keys. The sound of a rectangular wave with a very low duty cycle is very different from that of a square wave. The fundamental harmonic is less and less dominant as the pulse width gets thinner.
 
 When one square is 50µs wide, so the leaning slope of the wave is somewhere around 10µs wide. That's 1/100,000 of a second. This means that the width of the pulse is only 1/100,000th of a second. This is incredibly fast, and explains why the pulse looks more like a triangle than a rectangle. The reason the pulse looks more like a triangle at higher frequencies is because the width of the pulse is so small compared to the wavelength of the sound that it starts to distort the shape of the pulse.
@@ -29,7 +31,7 @@ more method for polyphonic sounds, using rectangular wave trains
 
 at highest zoom one can see the carrier frequency wave shaking up and down. By switching high and low states very fast, the programmer is controlling how far up or how far down the signal goes. When zoomed out, the purpose of that shaking becomes obvious: we are building a secondary wave made of small rectangular waves, and that secondary wave is already within human hearing frequency (the wave crests are 4.5ms apart which approximates to 220Hz, that is the note A3). ....able to refine their designs to achieve 5-bit resolution (32 discreet levels) at 22kHz carrier frequency. ...also can adjust more than just frequency. RT.Synth uses a wavetable to provide access to 8 different voices (shapes of waves), each of which also has their ADSR envelope defined. Interestingly enough, in addition to voices mimicking instruments like accoustic piano and banjo, Michael Mahon also included voices for triangle and... square wave. Here is how RT.Synth uses square waves to generate various instruments, includng square waves!
 
-see Electric Duet
+see [Electric Duet](https://github.com/SteveJustin1963/tec-Audio-Synthesizer/blob/main/docs/Electric%20Duet.pdf)
 
 
 
