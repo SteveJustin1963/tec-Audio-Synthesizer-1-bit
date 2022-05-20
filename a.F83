@@ -1,0 +1,14 @@
+ : play-sound
+   $FF $350 ! freq
+   $80 $352 ! width
+: pulse-width+
+   $352 1+ !
+   $350 1- !
+; : pulse-width-
+   $352 1- !
+   $350 1+ !
+; : freq+
+   $350 1+ !
+; : freq-
+   $350 1- !
+;
