@@ -27,6 +27,8 @@ more method for polyphonic sounds, using rectangular wave trains
 
 
 
+"square" wave doesn't really look square; close zoom where the "instant" switches between high and low show actual time delay, and also the switching itself is so rapid that the signal isn't reaching the fully high or the fully low state. Without modulating that base (or "carrier" or "phantom") frequency, we modulate the pulse width with such precision that the signal (and speaker) are maintained at the maximum high, minimum low, or at several levels in between. ...solution transforms digital signal (a stream of bytes in memory) to analog signal (frequency- and amplitude-modulated wave shape which, even though it isn't, can be approximated to a complex sine wave), and also that it is capable of 5-bit sampling resolution, and that the underlying switching frequency is 22kHz.
+
 
 
 
