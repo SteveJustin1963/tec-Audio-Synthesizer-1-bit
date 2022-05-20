@@ -11,9 +11,10 @@ Q: Dont touch that, thats my lunch!
 
 
 ### 1-bit music generators 
-from web; " PCs drive speaker with a PIT (programmable interval timer) , tec1 speaker is driven directly by the CPU via 1 transistor. our CPUs is more busy than PC's CPU to get sound. you have to sacrifice time from your main program to fit in your exact speaker clicks. stage 1 use 50-percent duty cycle, explore simple sounds with very narrow rectangular waves. As the duty cycle approaches 0% (or 100%), the harmonic components are more evenly distributed, without the fundamental one strongly dominating which, in turn, means that a long tail of harmonic components are lost beyond human hearing ability, and beyond hardware frequency response, so relatively less of the specific sound can be heard. 
+The main difference between a PC and our speaker is that a PC can use a programmable interval timer to drive the speaker, while our speaker is driven directly by the CPU via one transistor. This means that our CPU is more busy than a PC's CPU in order to produce sound. In order to get accurate sound, you have to sacrifice time from your main program to fit in your exact speaker clicks. Stage 1 uses a 50-percent duty cycle, which produces simple sounds with very narrow rectangular waves. As the duty cycle approaches 0% (or 100%), the harmonic components are more evenly distributed, without the fundamental one strongly dominating. This means that a long tail of harmonic components are lost beyond human hearing ability, and beyond hardware frequency response, so relatively less of the specific sound can be heard. The simple assembly program a.z80 allows the user to modulate the frequency of a continuous sound by pressing the left and right arrow keys, and to modulate the duty cycle by pressing the A and Z keys. The sound of a rectangular wave with a very low duty cycle is very different from that of a square wave. The fundamental harmonic is less and less dominant as the pulse width gets thinner.
 
-To explore the behavior of very low-duty cycle rectangular waves at different frequencies, see simple assembly program a.z80 ... is able to modulate frequency of the continuous sound with a pair of keys (arrows left and right), and modulate the duty cycle with another pair of keys (A and Z). Here is what modulating the duty cycle sounds like, and how frequency distrubution changes. Pay attention to the tall red line to the very left of the image. It represents the fundamental harmonic, and it is less and less dominating as the pulse width gets thinner:
+
+
 
 
 
