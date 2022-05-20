@@ -25,9 +25,11 @@ more method for polyphonic sounds, using rectangular wave trains
 - PPM; Pin Pulse Method, involves reducing the duty cycle of one frequency to a very low level (below 10%), and then introducing another frequency also at a very low duty cycle. The resulting pulses will likely not colide on the signal timeline (and if they do, then not frequently), but the two different pulse trains will successfully produce two frequencies which can be discerned by our brain as two notes playing at the same time.
 - PIM; Pulse Interleaving Method. ...is ingenious ...the limit medium can be pushed...a special high frequency is used to between high and low states fast enough to not allow the speaker cone to fully extend or collapse and instead keep it in one or more in-between states. Given enough in-between states one can represent a complex sine wave summation as a "stepped" rectangular wave and effectively achieve polyphony. 
 
-
-
 "square" wave doesn't really look square; close zoom where the "instant" switches between high and low show actual time delay, and also the switching itself is so rapid that the signal isn't reaching the fully high or the fully low state. Without modulating that base (or "carrier" or "phantom") frequency, we modulate the pulse width with such precision that the signal (and speaker) are maintained at the maximum high, minimum low, or at several levels in between. ...solution transforms digital signal (a stream of bytes in memory) to analog signal (frequency- and amplitude-modulated wave shape which, even though it isn't, can be approximated to a complex sine wave), and also that it is capable of 5-bit sampling resolution, and that the underlying switching frequency is 22kHz.
+
+at highest zoom one can see the carrier frequency wave shaking up and down. By switching high and low states very fast, the programmer is controlling how far up or how far down the signal goes. When zoomed out, the purpose of that shaking becomes obvious: we are building a secondary wave made of small rectangular waves, and that secondary wave is already within human hearing frequency (the wave crests are 4.5ms apart which approximates to 220Hz, that is the note A3). ....able to refine their designs to achieve 5-bit resolution (32 discreet levels) at 22kHz carrier frequency. ...also can adjust more than just frequency. RT.Synth uses a wavetable to provide access to 8 different voices (shapes of waves), each of which also has their ADSR envelope defined. Interestingly enough, in addition to voices mimicking instruments like accoustic piano and banjo, Michael Mahon also included voices for triangle and... square wave. Here is how RT.Synth uses square waves to generate various instruments, includng square waves!
+
+see Electric Duet
 
 
 
