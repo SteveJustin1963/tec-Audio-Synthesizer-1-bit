@@ -1,4 +1,22 @@
 ; ALIENS ATTACK RUN
+; This program works by first pushing the AF and DE registers onto the stack.
+; It then loads the DE register with the value 0020 and decrements it.
+; It then loads the A register with the value of D and ORs it with E.
+; If the result is not zero, it will jump to 905.
+; If the result is zero, it will pop the DE and AF registers off the stack and return.
+; Otherwise, it will push the AF register onto the stack and push the BC register onto the stack.
+; It will then load the BC register with the value 00AA and load the A register with 80.
+; It will then output the value in the A register to port 1.
+; It will then load the A register with 00 and output it to port 1.
+; It will then call 0900.
+; It will decrement the BC register and load the A register with the value of B.
+; It will then OR the A register with C.
+; If the result is not zero, it will jump to 913.
+; If the result is zero, it will pop the BC and AF registers off the stack and return.
+
+
+
+
 
 org 0800
 LD HL,0903
@@ -25,7 +43,7 @@ PUSH AF
 PUSH BC
 LD BC,00AA
 LD A,80
-OUT (I)A
+OUT (1),A
 LD A,00
 OUT (1),A
 CALL 0900
