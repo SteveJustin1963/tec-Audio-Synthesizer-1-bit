@@ -15,7 +15,7 @@
 ; If the result is zero, it will pop the BC and AF registers off the stack and return.
 
 
-
+; This code is responsible for sending a byte of data to an output port. The data is sent least-significant bit first.
 
 
 org 0800
