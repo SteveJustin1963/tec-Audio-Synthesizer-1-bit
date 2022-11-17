@@ -1,0 +1,31 @@
+
+: main
+   Variable a
+   Variable b
+   Variable c
+   Variable d
+   Variable p
+   Variable i
+   
+   a = 1
+   b = 1
+   c = 1
+   d = 1
+   p = &a
+   for i = 0 to 255
+      b = p
+      c = p+1
+      a = a+3
+      if a >= 32
+         a = 32
+      endif
+      if b = 1
+         b = 73
+      endif
+      if c = 1
+         c = 201
+      endif
+      .( b c )
+      p = p+2
+   endfor
+;
