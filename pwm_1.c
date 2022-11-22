@@ -1,7 +1,7 @@
 // pulse width modulation control works by driving a digital output with a series of “ON-OFF” 
 // pulses and then varying the duty cycle, the fraction of time that the output voltage is “ON” 
 // compared to when it is “OFF”, of the pulses while keeping the frequency constant.
-// write c code to do the above 
+//  c code   
 
  
 int main()
