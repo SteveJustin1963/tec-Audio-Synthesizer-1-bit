@@ -1,0 +1,19 @@
+
+: Z80_PPM   ( addr1 addr2 -- )
+   over over + >r
+   0 do
+      i j@ carrier_length / data_length * =
+      if
+         8 0 do
+            i j@ 1 carrier_length / data_length * +
+            i j@ 1 data_length / carrier_length * +
+            i j@ 1 and 0= if
+               1 lshift or
+            else
+               0
+            then
+         loop
+      then
+   r> +!
+   loop
+;
