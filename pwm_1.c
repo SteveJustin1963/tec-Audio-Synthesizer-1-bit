@@ -35,3 +35,27 @@ int main()
         }
     }
 }
+
+
+=================
+ 
+// c code to do the above for a z80 cpu
+
+   // set output pin to digital output mode
+   DDRB |= (1 << DDB5);
+
+// loop forever
+   while (1)
+   {
+       // turn on output pin
+       PORTB |= (1 << PB5);
+
+       // wait for 1/2 second
+       _delay_ms(500);
+
+       // turn off output pin
+       PORTB &= ~(1 << PB5);
+
+       // wait for 1/2 second
+       _delay_ms(500);
+   }
