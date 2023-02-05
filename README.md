@@ -9,6 +9,5 @@ Bond: And whats this thing do?
 Q: Dont touch that, thats my lunch!
 ```
 
-see wiki
-
+see https://github.com/SteveJustin1963/tec-Audio-Synthesizer/wiki
 
