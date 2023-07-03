@@ -37,7 +37,7 @@ int main()
 }
 
 
-=================
+/////////////////////////////////////////////////////////////////////////////
  
 // c code to do the above for a z80 cpu
 
@@ -59,3 +59,49 @@ int main()
        // wait for 1/2 second
        _delay_ms(500);
    }
+
+
+//////////////////////////
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+#define PWM_OUTPUT_PIN PD6
+
+void setupPWM() {
+    // Set PWM output pin as output
+    DDRD |= (1 << PWM_OUTPUT_PIN);
+}
+
+void setPWMDutyCycle(uint8_t dutyCycle) {
+    // Calculate the delay time for the "ON" state
+    uint16_t onTime = (dutyCycle * 10) / 256;  // Adjust the divisor for desired PWM range
+
+    // Calculate the delay time for the "OFF" state
+    uint16_t offTime = 10 - onTime;
+
+    // Toggle the PWM output pin based on the duty cycle
+    PORTD |= (1 << PWM_OUTPUT_PIN);
+    _delay_ms(onTime);
+    PORTD &= ~(1 << PWM_OUTPUT_PIN);
+    _delay_ms(offTime);
+}
+
+int main() {
+    setupPWM();
+
+    while (1) {
+        // Increase duty cycle gradually
+        for (int i = 0; i <= 255; i++) {
+            setPWMDutyCycle(i);
+        }
+
+        // Decrease duty cycle gradually
+        for (int i = 255; i >= 0; i--) {
+            setPWMDutyCycle(i);
+        }
+    }
+
+    return 0;
+}
+////////////////////////////////
