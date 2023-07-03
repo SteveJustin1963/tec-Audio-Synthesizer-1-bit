@@ -8,6 +8,4 @@ Q: I never joke Bond!
 Bond: And whats this thing do?
 Q: Dont touch that, thats my lunch!
 ```
-
-see https://github.com/SteveJustin1963/tec-Audio-Synthesizer/wiki
-
+ 
