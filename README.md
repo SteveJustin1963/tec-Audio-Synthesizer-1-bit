@@ -1,5 +1,5 @@
 # tec-Audio-Synthesizer
--https://github.com/SteveJustin1963/tec-Audio-Synthesizer-1-bit/wiki
+- https://github.com/SteveJustin1963/tec-Audio-Synthesizer-1-bit/wiki
 
 
 ```
