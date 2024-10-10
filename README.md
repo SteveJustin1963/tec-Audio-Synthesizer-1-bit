@@ -1,4 +1,6 @@
 # tec-Audio-Synthesizer
+-https://github.com/SteveJustin1963/tec-Audio-Synthesizer-1-bit/wiki
+
 
 ```
 Q: Now listen here Bond, the Tec-1 has only a 1-bit audio system, 
@@ -9,3 +11,4 @@ Bond: And whats this thing do?
 Q: Dont touch that, thats my lunch!
 ```
  
+
