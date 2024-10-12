@@ -1,5 +1,4 @@
-// Simplified Polyphonic Sound Generator in MINT
-
+// mint 2.0
 // Constants
 44100 r!  // Sample rate
 32767 a!  // Amplitude
@@ -13,22 +12,22 @@
 0 s!      // Sample
 
 // Calculate phase increments (simplified)
-f1 100 * r / i1!
-f2 100 * r / i2!
+f1 r / i1!
+f2 r / i2!
 
 // Generate sound
 :G
-  d r 1000 / * (  // Loop for duration
+  d r 1000 / * (  // Loop for duration in samples
     // Generate sample for frequency 1
-    p1 a * 100 / s!
+    p1 a * 32767 / s!
     
     // Add sample for frequency 2
-    p2 a * 100 / s + s!
-    
-    // Output sample
+    p2 a * 32767 / s + s!
+
+    // Output sample to I/O port #F801
     s #F801 /O
-    
-    // Update phases
+
+    // Update phases with modulo 2π (approximated as 628)
     p1 i1 + 628 % p1!
     p2 i2 + 628 % p2!
   )
