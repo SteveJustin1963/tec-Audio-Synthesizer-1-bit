@@ -6,8 +6,8 @@
 Q: Now listen here Bond, the tec-1 has only a 1-bit audio system, 
 but I can make it produce more than a square wave. 
 Bond: A 1-bit audio-synthesizer on the tec-1, you've got to be joking ? 
-Q: I never joke Bond! What's more later we'll add a DAC and with a bit of funding an ADC as well.
-Bond: OK...(looking around) And whats this thing do?
+Q: I never joke Bond! What's more later with a bit of funding we'll add a DAC and ADC as well.
+Bond: OK Q, (looking around), and whats this thing do?
 Q: Don't touch that, that's my lunch!
 ```
 
