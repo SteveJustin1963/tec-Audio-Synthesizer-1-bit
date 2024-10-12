@@ -5,7 +5,7 @@
 ```
 Q: Now listen here Bond, the Tec-1 has only a 1-bit audio system, 
 but I can make it produce more than a square wave. 
-Bond: A 1-bit audio-synthesizer on the tec-1 will sound like shit...you've got to be joking ? 
+Bond: A 1-bit audio-synthesizer on the tec-1, you've got to be joking ? 
 Q: I never joke Bond!
 Bond: (looking around) And whats this thing do?
 Q: Dont touch that, thats my lunch!
